@@ -1,5 +1,5 @@
-import pkg from "moongoose"
-const { Schema, model } =pkg;
+import mongoose from "mongoose";
+const { Schema, model } = mongoose;
 import pkg1 from 'bcryptjs';
 const { hash, compare } = pkg1;
 import pkg2 from 'jsonwebtoken';
