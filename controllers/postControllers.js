@@ -3,8 +3,8 @@ import Post from "../models/Post.js";
 import Comment from "../models/Comment.js";
 import { fileRemover } from "../utils/fileRemover.js";
 
-import pkg from "uuid"
-const{ v4 as uuidv4 } =pkg;
+import { v4 as uuidv4 } from "uuid"
+
 const createPost = async (req, res, next) => {
   try {
     const post = new Post({
