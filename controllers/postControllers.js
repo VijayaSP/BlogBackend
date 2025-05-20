@@ -2,8 +2,9 @@ import { uploadPicture } from "../middleware/uploadPictureMiddleware.js";
 import Post from "../models/Post.js";
 import Comment from "../models/Comment.js";
 import { fileRemover } from "../utils/fileRemover.js";
-import { v4 as uuidv4 } from "uuid";
 
+import pkg from "uuid"
+const{ v4 as uuidv4 } =pkg;
 const createPost = async (req, res, next) => {
   try {
     const post = new Post({
