@@ -1,5 +1,5 @@
-import pkg from "moongoose"
-const { Schema, model } =pkg;
+import mongoose from "mongoose";
+const { Schema, model } = mongoose;
 const PostCategoriesSchema = new Schema(
   {
     title: { type: String, required: true },
