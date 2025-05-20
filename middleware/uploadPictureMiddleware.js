@@ -27,8 +27,8 @@
 // export { uploadPicture };
 import multer from "multer";
 import path from "path";
-
-import { fileURLToPath } from 'url';
+import pkg from 'url'
+const { fileURLToPath } = pkg;
 
 // This replaces __dirname in ES Modules
 const __filename = fileURLToPath(import.meta.url);
